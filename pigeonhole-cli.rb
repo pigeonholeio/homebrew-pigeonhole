@@ -5,23 +5,23 @@
 class PigeonholeCli < Formula
   desc "Sending your secrets securely!"
   homepage "https://pigeono.io"
-  version "0.4.12"
+  version "0.4.13"
 
   on_macos do
     on_intel do
-      url "https://releases.pigeono.io/0.4.12/darwin/amd64/pigeonhole"
-      sha256 "f72a1161a996adfa7dac214c20ec609ea63a07f22270e68bb186d8b1e99f8b8e"
+      url "https://github.com/pigeonholeio/pigeonhole-cli/releases/download/0.4.13/pigeonhole_0.4.13_darwin_amd64"
+      sha256 "79037fd4dbe69f9bc8bdbb4184bdd9a80ea76d64743b02b654ea77c67b375a1b"
 
       def install
-        bin.install "pigeonhole_0.4.12_darwin_amd64" => "pigeonhole-cli/0.4.12/darwin/amd64/pigeonhole"
+        bin.install "pigeonhole_0.4.13_darwin_amd64" => "pigeonhole-cli/0.4.13/darwin/amd64/pigeonhole"
       end
     end
     on_arm do
-      url "https://releases.pigeono.io/0.4.12/darwin/arm64/pigeonhole"
-      sha256 "f4a3a485108d92d803fb2c9accf55886251333b9d4243fc8608e6f595479255b"
+      url "https://github.com/pigeonholeio/pigeonhole-cli/releases/download/0.4.13/pigeonhole_0.4.13_darwin_arm64"
+      sha256 "3dc41d04e981ba92fc922d6c53272abe00c3889496659be50aa255e023200e94"
 
       def install
-        bin.install "pigeonhole_0.4.12_darwin_arm64" => "pigeonhole-cli/0.4.12/darwin/arm64/pigeonhole"
+        bin.install "pigeonhole_0.4.13_darwin_arm64" => "pigeonhole-cli/0.4.13/darwin/arm64/pigeonhole"
       end
     end
   end
@@ -29,21 +29,21 @@ class PigeonholeCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://releases.pigeono.io/0.4.12/linux/amd64/pigeonhole"
-        sha256 "2a84df8d1d1fba7ad184933e286100206e0694318838b119bf067ceddc872e0d"
+        url "https://github.com/pigeonholeio/pigeonhole-cli/releases/download/0.4.13/pigeonhole_0.4.13_linux_amd64"
+        sha256 "58c632d44d5fed89a35f2f3fff4edda0f16b8cbd74b5bc90dc8f4cad30aae2db"
 
         def install
-          bin.install "pigeonhole_0.4.12_linux_amd64" => "pigeonhole-cli/0.4.12/linux/amd64/pigeonhole"
+          bin.install "pigeonhole_0.4.13_linux_amd64" => "pigeonhole-cli/0.4.13/linux/amd64/pigeonhole"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://releases.pigeono.io/0.4.12/linux/arm64/pigeonhole"
-        sha256 "2cc69160a750b9433b2ecad509721a8e8bff5662c8c31de94ae882b4896dc165"
+        url "https://github.com/pigeonholeio/pigeonhole-cli/releases/download/0.4.13/pigeonhole_0.4.13_linux_arm64"
+        sha256 "73d1c5922fc77e59e072b953fb23a84ce48a38dedf523a48ad637b89b442b79f"
 
         def install
-          bin.install "pigeonhole_0.4.12_linux_arm64" => "pigeonhole-cli/0.4.12/linux/arm64/pigeonhole"
+          bin.install "pigeonhole_0.4.13_linux_arm64" => "pigeonhole-cli/0.4.13/linux/arm64/pigeonhole"
         end
       end
     end
