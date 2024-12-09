@@ -5,23 +5,23 @@
 class PigeonholeCli < Formula
   desc "Sending your secrets securely!"
   homepage "https://pigeono.io"
-  version "0.4.15"
+  version "0.4.16"
 
   on_macos do
     on_intel do
-      url "https://releases.pigeono.io/0.4.15/darwin/amd64/pigeonhole.tar.gz"
-      sha256 "3e7e1556db3188061a821574fd432e42892f98a8e275384cd9947e3121ab8f20"
+      url "https://releases.pigeono.io/0.4.16/darwin/amd64/pigeonhole.tar.gz"
+      sha256 "d797a2d3b26f3886a4d0e2b226ecfda69188d09b0704ab0bbc268c0ce034a2b2"
 
       def install
-        bin.install "pigeonhole-cli/0.4.15/darwin/amd64/pigeonhole"
+        bin.install "pigeonhole-cli/0.4.16/darwin/amd64/pigeonhole"
       end
     end
     on_arm do
-      url "https://releases.pigeono.io/0.4.15/darwin/arm64/pigeonhole.tar.gz"
-      sha256 "c0fb36a8b7eb116b044dede4814d6807a449b8adf92fdc84a60e0b7551831f59"
+      url "https://releases.pigeono.io/0.4.16/darwin/arm64/pigeonhole.tar.gz"
+      sha256 "0c0b9a921fa553c6edd3ba9d99c340ef66f3e7c92203e8f46b1bbf54487d2b83"
 
       def install
-        bin.install "pigeonhole-cli/0.4.15/darwin/arm64/pigeonhole"
+        bin.install "pigeonhole-cli/0.4.16/darwin/arm64/pigeonhole"
       end
     end
   end
@@ -29,21 +29,21 @@ class PigeonholeCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://releases.pigeono.io/0.4.15/linux/amd64/pigeonhole.tar.gz"
-        sha256 "f20ebe112b1bbc1b2c281ae9a82ce2ba5d9cfd7cf8e2b4a1e71f6ce89f3c8368"
+        url "https://releases.pigeono.io/0.4.16/linux/amd64/pigeonhole.tar.gz"
+        sha256 "2d813c34765d52fc9cfbb59036334c4f3a2df1e1a12b453cefe4d6ea6a9f77d1"
 
         def install
-          bin.install "pigeonhole-cli/0.4.15/linux/amd64/pigeonhole"
+          bin.install "pigeonhole-cli/0.4.16/linux/amd64/pigeonhole"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://releases.pigeono.io/0.4.15/linux/arm64/pigeonhole.tar.gz"
-        sha256 "7734b9a11ee27bfc0c99f04e08a75c7fba869c1f89c335a0314396b51a09bb5c"
+        url "https://releases.pigeono.io/0.4.16/linux/arm64/pigeonhole.tar.gz"
+        sha256 "75867b5a4d8453b60ff4036f8956f35100b8bc4e2cfb7a829070a15b7d3f4ee1"
 
         def install
-          bin.install "pigeonhole-cli/0.4.15/linux/arm64/pigeonhole"
+          bin.install "pigeonhole-cli/0.4.16/linux/arm64/pigeonhole"
         end
       end
     end
