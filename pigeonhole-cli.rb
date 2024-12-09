@@ -10,18 +10,18 @@ class PigeonholeCli < Formula
   on_macos do
     on_intel do
       url "https://releases.pigeono.io/0.4.15/darwin/amd64/pigeonhole"
-      sha256 "dd59773331dde2c24b1544534f672a91e30769d112bf8aa74895da3fbe9f66a3"
+      sha256 "de7696089cdc1beb413827b8afd2c3d5d2e8bfe1dfba3b08e1f2dba2e4de09bb"
 
       def install
-        bin.install "pigeonhole_0.4.15_darwin_amd64" => "pigeonhole-cli/0.4.15/darwin/amd64/pigeonhole"
+        bin.install "pigeonhole-xyz" => "pigeonhole-cli/0.4.15/darwin/amd64/pigeonhole"
       end
     end
     on_arm do
       url "https://releases.pigeono.io/0.4.15/darwin/arm64/pigeonhole"
-      sha256 "da9f79c2a87aabb97d2090b8596d0414247181d1b6be2f5914d0c8fdeecb5ec2"
+      sha256 "a07f769e68e59f2e52d361edbe3cf7f81a9ad2231923581d2680073a811288ac"
 
       def install
-        bin.install "pigeonhole_0.4.15_darwin_arm64" => "pigeonhole-cli/0.4.15/darwin/arm64/pigeonhole"
+        bin.install "pigeonhole-xyz" => "pigeonhole-cli/0.4.15/darwin/arm64/pigeonhole"
       end
     end
   end
@@ -30,20 +30,20 @@ class PigeonholeCli < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://releases.pigeono.io/0.4.15/linux/amd64/pigeonhole"
-        sha256 "f4aa5f499870b6d88e5b882bcb5046af98ce139bf2b017c6b34c25fa8a1bc38f"
+        sha256 "c0218c6377cfe4712c2bec102fe58e283e57882505111236a0831ca69db1c254"
 
         def install
-          bin.install "pigeonhole_0.4.15_linux_amd64" => "pigeonhole-cli/0.4.15/linux/amd64/pigeonhole"
+          bin.install "pigeonhole-xyz" => "pigeonhole-cli/0.4.15/linux/amd64/pigeonhole"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://releases.pigeono.io/0.4.15/linux/arm64/pigeonhole"
-        sha256 "ff7ee0212161d72d6673b01c7a1db142747fb0c696a06c5e9cbd2a95f2d9cc2c"
+        sha256 "856b82008ec9ef094c701e2eaf9519927bc9e51a935b842f7f39a0d5a37a6b6c"
 
         def install
-          bin.install "pigeonhole_0.4.15_linux_arm64" => "pigeonhole-cli/0.4.15/linux/arm64/pigeonhole"
+          bin.install "pigeonhole-xyz" => "pigeonhole-cli/0.4.15/linux/arm64/pigeonhole"
         end
       end
     end
