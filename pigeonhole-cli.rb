@@ -5,23 +5,23 @@
 class PigeonholeCli < Formula
   desc "Sending your secrets securely!"
   homepage "https://pigeono.io"
-  version "0.4.22"
+  version "0.4.23"
 
   on_macos do
     on_intel do
-      url "https://releases.pigeono.io/0.4.22/darwin/amd64/pigeonhole.tar.gz"
-      sha256 "b1af234bf996d6d277aabd693ef08bd9421e9c3d30089a7757f6af07556079a4"
+      url "https://releases.pigeono.io/0.4.23/darwin/amd64/pigeonhole.tar.gz"
+      sha256 "6168475ce54fe74f190c48733c572b28db2d0ea919240982894bd3d7126e9c03"
 
       def install
-        bin.install "0.4.22/darwin/amd64/pigeonhole"
+        bin.install "0.4.23/darwin/amd64/pigeonhole"
       end
     end
     on_arm do
-      url "https://releases.pigeono.io/0.4.22/darwin/arm64/pigeonhole.tar.gz"
-      sha256 "3473062afbd50f972e56562a3a1cd89b3225af9e8ffdd888597d03b2f46d0e03"
+      url "https://releases.pigeono.io/0.4.23/darwin/arm64/pigeonhole.tar.gz"
+      sha256 "38d4f4b6f11d724baa873cd131f66be8f2ed56ac17f93ff733cc4be67b2696c9"
 
       def install
-        bin.install "0.4.22/darwin/arm64/pigeonhole"
+        bin.install "0.4.23/darwin/arm64/pigeonhole"
       end
     end
   end
@@ -29,21 +29,21 @@ class PigeonholeCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://releases.pigeono.io/0.4.22/linux/amd64/pigeonhole.tar.gz"
-        sha256 "45a051d590fd64bf15398b4e380b598b584d2f7ee75be79cb60d4cf84181a85a"
+        url "https://releases.pigeono.io/0.4.23/linux/amd64/pigeonhole.tar.gz"
+        sha256 "572743480655e58a7817976c532458c706ae649f0665f895908de0a88b382861"
 
         def install
-          bin.install "0.4.22/linux/amd64/pigeonhole"
+          bin.install "0.4.23/linux/amd64/pigeonhole"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://releases.pigeono.io/0.4.22/linux/arm64/pigeonhole.tar.gz"
-        sha256 "1af1f135b553954d968cdeab020fe3536f83b26ec2915ef4f28f29551c1d1b80"
+        url "https://releases.pigeono.io/0.4.23/linux/arm64/pigeonhole.tar.gz"
+        sha256 "8982d6edc89748ece1a4641c5337bd1e3e12905b8744a24f7dbde5326c8c0bca"
 
         def install
-          bin.install "0.4.22/linux/arm64/pigeonhole"
+          bin.install "0.4.23/linux/arm64/pigeonhole"
         end
       end
     end
