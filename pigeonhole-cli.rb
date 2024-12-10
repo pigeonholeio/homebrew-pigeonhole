@@ -10,7 +10,7 @@ class PigeonholeCli < Formula
   on_macos do
     on_intel do
       url "https://releases.pigeono.io/0.4.24/darwin/amd64/pigeonhole.tar.gz"
-      sha256 "8654d99052f7b487a0c10205c5d4e5253b933b23531000b41ac48cb3766a2074"
+      sha256 "c614f926d1bc148177086671876cf7b951ad7d0d3091086dd79c467536ab0340"
 
       def install
         bin.install "0.4.24/darwin/amd64/pigeonhole"
@@ -18,7 +18,7 @@ class PigeonholeCli < Formula
     end
     on_arm do
       url "https://releases.pigeono.io/0.4.24/darwin/arm64/pigeonhole.tar.gz"
-      sha256 "1ac122379418d92efee5ce4ba70882c89290e00e52009744e69ac6ebc0e22138"
+      sha256 "173401adf83295582b1dc822718012d0364e1ac1f33fd9c7b081f2b7baa38ba8"
 
       def install
         bin.install "0.4.24/darwin/arm64/pigeonhole"
@@ -30,7 +30,7 @@ class PigeonholeCli < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://releases.pigeono.io/0.4.24/linux/amd64/pigeonhole.tar.gz"
-        sha256 "c568e133b35b5f6342df4cb786c653698d48cad66a3076c2b25f44241d2702f1"
+        sha256 "9aac90e4c345a1f76e4080e740b7aec17c278bbf638f5cdf614d2031b3c9313c"
 
         def install
           bin.install "0.4.24/linux/amd64/pigeonhole"
@@ -40,7 +40,7 @@ class PigeonholeCli < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://releases.pigeono.io/0.4.24/linux/arm64/pigeonhole.tar.gz"
-        sha256 "cf57f74ea470cb52b5eb31dbb7c1da08a318763e6190a80d93051d1cad66a8bd"
+        sha256 "bd980c15f44b1a3d95be1405afa633ab05c559b37b9cd1223bee760df4aa2cbe"
 
         def install
           bin.install "0.4.24/linux/arm64/pigeonhole"
