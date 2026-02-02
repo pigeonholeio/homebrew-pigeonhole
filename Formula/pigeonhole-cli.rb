@@ -5,20 +5,20 @@
 class PigeonholeCli < Formula
   desc ""
   homepage ""
-  version "1.2.19"
+  version "1.2.20"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pigeonholeio/pigeonhole-cli/releases/download/1.2.19/pigeonhole-cli_1.2.19_darwin_amd64.tar.gz"
-      sha256 "eb284361fbf570ba5a8c0770db7c6a3063397031021dbcd671ae286dde2eacdf"
+      url "https://github.com/pigeonholeio/pigeonhole-cli/releases/download/1.2.20/pigeonhole-cli_1.2.20_darwin_amd64.tar.gz"
+      sha256 "01bedbd548b0b8378fb55bc3a5c7a045eb058422d80112c472e0f3115477b688"
 
       def install
         bin.install "pigeonhole"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pigeonholeio/pigeonhole-cli/releases/download/1.2.19/pigeonhole-cli_1.2.19_darwin_arm64.tar.gz"
-      sha256 "68d496c0008878846113aa02ad84b7f6843b8f4967ca84a304c94fd54d763539"
+      url "https://github.com/pigeonholeio/pigeonhole-cli/releases/download/1.2.20/pigeonhole-cli_1.2.20_darwin_arm64.tar.gz"
+      sha256 "a0b26c58838e9f726cfaf6eee0d7286d4f86d9f72a4eda78f749eac623f87fe5"
 
       def install
         bin.install "pigeonhole"
@@ -28,15 +28,15 @@ class PigeonholeCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/pigeonholeio/pigeonhole-cli/releases/download/1.2.19/pigeonhole-cli_1.2.19_linux_amd64.tar.gz"
-      sha256 "d34d19076b6e8097468b71ae05b1be19ceb470e666abf693b0db48d713410524"
+      url "https://github.com/pigeonholeio/pigeonhole-cli/releases/download/1.2.20/pigeonhole-cli_1.2.20_linux_amd64.tar.gz"
+      sha256 "dde55329a3ce5fea2379db585a0250dc004004e54cab478fc2477fb9364d8730"
       def install
         bin.install "pigeonhole"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/pigeonholeio/pigeonhole-cli/releases/download/1.2.19/pigeonhole-cli_1.2.19_linux_arm64.tar.gz"
-      sha256 "a45ea11e054189e418b4e05dd857ca7681113d959bea51fcbd208be624e0ec61"
+      url "https://github.com/pigeonholeio/pigeonhole-cli/releases/download/1.2.20/pigeonhole-cli_1.2.20_linux_arm64.tar.gz"
+      sha256 "139767423cb27210167b0051d669d894fe81bde09fb87c337ba554cf4bfb3042"
       def install
         bin.install "pigeonhole"
       end
